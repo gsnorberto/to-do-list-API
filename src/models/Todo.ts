@@ -16,8 +16,8 @@ export const Todo = sequelize.define<TodoInstance>('Todo', {
       type: DataTypes.STRING
    },
    done:{
-      type: DataTypes.BOOLEAN,
-      defaultValue: false
+      type: DataTypes.TINYINT,
+      defaultValue: 0
    }
 },{
    tableName: 'todos',
